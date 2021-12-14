@@ -63,9 +63,11 @@ for (var y=0; y <height; ++y){
   var color = 'black';
 
   //fractal itteration values 
-  var fracX = 0.5;
-  var fracY = 0.5
-  ;
+  var fracX = 0;
+  var fracY = 0;
+
+
+
 
 
   for (var i=0; i<100;i++){
@@ -79,13 +81,13 @@ for (var y=0; y <height; ++y){
     //if the distance is less than 2 it will cycle through the colours and leave the loop 
     if (distance>2){
       color = colors[i%colors.length];
-      break;
+
+      ;
     }
 
     // x and y keeps going up to make us keep itterating 
     fracX = newFracX;
     fracY = newFracY;
-
 
 
 
